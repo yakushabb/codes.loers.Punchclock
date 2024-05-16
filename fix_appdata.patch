@@ -1,0 +1,43 @@
+diff --git a/target/gra-gen/data/codes.loers.Punchclock.appdata.xml b/target/gra-gen/data/codes.loers.Punchclock.appdata.xml
+index 8198fcf..7c607ed 100644
+--- a/target/gra-gen/data/codes.loers.Punchclock.appdata.xml
++++ b/target/gra-gen/data/codes.loers.Punchclock.appdata.xml
+@@ -16,11 +16,6 @@
+     <provides>
+         <binary>codes.loers.Punchclock</binary>
+     </provides>
+-    <categories>
+-        <category>GTK</category>
+-        <category>Office</category>
+-        <category>Utility</category>
+-    </categories>
+     <screenshots>
+         <screenshot type="default"><image  type="source">https://gitlab.com/floers/punchclock/-/raw/main/screenshots/small.png</image></screenshot>
+         <screenshot ><image  type="source">https://gitlab.com/floers/punchclock/-/raw/main/screenshots/large.png</image></screenshot>
+@@ -66,10 +61,10 @@
+     </releases>
+     <content_rating type="oars-1.1" />
+     <requires>
+-        <display compare="gt">360</display>
++        <display_length compare="ge">360</display_length>
+     </requires>
+     <recommends>
+-        <control>pointer</control>
++        <control>pointing</control>
+         <control>keyboard</control>
+         <control>touch</control>
+     </recommends>
+diff --git a/target/gra-gen/data/codes.loers.Punchclock.desktop b/target/gra-gen/data/codes.loers.Punchclock.desktop
+index 9a83d9f..42fbe60 100644
+--- a/target/gra-gen/data/codes.loers.Punchclock.desktop
++++ b/target/gra-gen/data/codes.loers.Punchclock.desktop
+@@ -2,7 +2,8 @@
+ Name=Punchclock
+ GenericName=Punchclock
+ Comment=Track time for your tasks.
+-Categories=GTK;Office;Utility
++Categories=Office;Utility
++Keywords=Time;Clock;Punchclock;
+ Icon=codes.loers.Punchclock
+ Exec=codes.loers.Punchclock
+ Terminal=false
